@@ -242,9 +242,11 @@ A escalabilidade **horizontal** significa rodar várias cópias da aplicação p
 Se o tráfego aumentar, você pode rodar **múltiplas instâncias** e usar um **Load Balancer** para distribuir as requisições.  
 
 🔹 No **Railway, Render ou Heroku**, basta aumentar as "instâncias" na configuração do serviço.  
-🔹 Se estiver em um **VPS (AWS, DigitalOcean, Brdrive)**, pode usar o **NGINX** como proxy reverso.
+🔹 Se estiver em um **VPS (AWS, DigitalOcean, Brdrive)**, pode usar o **** como proxy reverso.
 
 Exemplo de configuração NGINX para distribuir o tráfego entre 2 instâncias Flask:
+
+Crie uma pasta chamada `nginx` e crie um arquivo `nginx.conf` dentro dela, coloque o codigo a seguir nesse arquivo:
 
 ```nginx
 upstream flask_app {
