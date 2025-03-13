@@ -23,5 +23,11 @@ Estamos usando o domínio `desweb.local` para testar a aplicação. Adicione o s
 Alguns aquivos que deveriam estar no `.gitignore` não estão, então fica mais facil de rodar. O build esta automatico.
 
 ```sh
-docker compose up
+docker compose up --build
+```
+Caso de problema no banco rode.
+
+```
+source ./.venv/bin/activate
+python3 init_db.py 
 ```
